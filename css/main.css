@@ -1,7 +1,69 @@
-@media only screen and (min-width: 800px){
-    #navbar{
-        position: absolute;
+* {
+    font-family: 'Open Sans'
+}
+
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: rgba(13, 34, 41, 0.5);
+}
+
+header {
+    font-size: 2rem;
+}
+
+nav {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+#main-doc {
+    background-color: gainsboro;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+@media only screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        margin: 0;
+    }
+
+    #main-doc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 5em;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
         left: 0;
         top: 0;
+
+        /* padding-right: 0.625em; */
+        border-right: 2px solid grey;
     }
+
+
 }
