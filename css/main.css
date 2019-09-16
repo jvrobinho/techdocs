@@ -118,8 +118,9 @@ code>pre {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left: 8em;
+        padding-left: 5.5em;
         padding-top: 0.625em;
+        line-break: strict;
     }
 
     .main-section>li {
@@ -130,5 +131,9 @@ code>pre {
 
     .main-section>p {
         margin-block-start: 0.5em;
+    }
+
+    #main-doc>.main-section:not(:first-child)>header {
+        margin-top: 1em;
     }
 }
